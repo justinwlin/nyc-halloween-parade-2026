@@ -110,8 +110,8 @@ L.polyline(route,{color:'#ff7a00',weight:7,opacity:.9}).addTo(map).bindPopup('Pa
 L.polyline([[40.72238,-74.00495],[40.72535,-74.00395]],{color:'#b04cff',weight:12,opacity:.6}).addTo(map).bindPopup('<b>Costume lineup</b><br>6th Ave south of Spring St, 6:30–9 PM.<br>Enter only from the south or east (Canal, Sullivan, Broome).');
 L.polyline([[40.72775,-74.00315],[40.72845,-74.00283]],{color:'#2fd36b',weight:12,opacity:.55,offset:0}).addTo(map).bindPopup('Less crowded: King St to Houston St');
 L.polyline([[40.73776,-73.99666],[40.73839,-73.99620]],{color:'#2fd36b',weight:12,opacity:.55}).addTo(map).bindPopup('Less crowded: W 14th to W 15th St');
-L.circleMarker([40.72238,-74.00495],{radius:9,color:'#fff',fillColor:'#ff7a00',fillOpacity:1}).addTo(map).bindTooltip('START · Canal St & 6th Ave',{permanent:true,direction:'left'});
-L.circleMarker([40.73839,-73.99620],{radius:9,color:'#fff',fillColor:'#e0245e',fillOpacity:1}).addTo(map).bindTooltip('END · W 15th St',{permanent:true,direction:'right'});
+L.circleMarker([40.72238,-74.00495],{radius:9,color:'#fff',fillColor:'#ff7a00',fillOpacity:1}).addTo(map).bindTooltip('START · Canal St & 6th Ave',{permanent:true,direction:'right'});
+L.circleMarker([40.73839,-73.99620],{radius:9,color:'#fff',fillColor:'#e0245e',fillOpacity:1}).addTo(map).bindTooltip('END · W 15th St',{permanent:true,direction:'left'});
 const subIcon=L.divIcon({className:'',html:'<div style="font-size:18px;line-height:18px">🚇</div>',iconSize:[18,18],iconAnchor:[9,9]});
 [[40.726227,-74.003739,'Spring St (C/E)','Downtown trains skip it 5–10 PM. Uptown side is exit only. Closest to the lineup.'],
 [40.720824,-74.005229,'Canal St (A/C/E)','Good for the lineup. Enter from Canal St.'],
