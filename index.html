@@ -107,7 +107,7 @@ const map=L.map('map',{scrollWheelZoom:false}).setView([40.7305,-74.0010],15);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
 const route=[[40.72238,-74.00495],[40.72535,-74.00395],[40.72775,-74.00315],[40.72845,-74.00283],[40.73003,-74.00203],[40.73226,-74.00034],[40.73343,-73.99937],[40.73776,-73.99666],[40.73839,-73.99620]];
 L.polyline(route,{color:'#ff7a00',weight:7,opacity:.9}).addTo(map).bindPopup('Parade route: north on 6th Ave, 7–11 PM');
-L.polyline([[40.72003,-74.00560],[40.72238,-74.00495],[40.72535,-74.00395]],{color:'#b04cff',weight:12,opacity:.6}).addTo(map).bindPopup('<b>Costume lineup</b><br>6th Ave south of Spring St, 6:30–9 PM.<br>Enter only from the south or east (Canal, Sullivan, Broome).');
+L.polyline([[40.72238,-74.00495],[40.72535,-74.00395]],{color:'#b04cff',weight:12,opacity:.6}).addTo(map).bindPopup('<b>Costume lineup</b><br>6th Ave south of Spring St, 6:30–9 PM.<br>Enter only from the south or east (Canal, Sullivan, Broome).');
 L.polyline([[40.72775,-74.00315],[40.72845,-74.00283]],{color:'#2fd36b',weight:12,opacity:.55,offset:0}).addTo(map).bindPopup('Less crowded: King St to Houston St');
 L.polyline([[40.73776,-73.99666],[40.73839,-73.99620]],{color:'#2fd36b',weight:12,opacity:.55}).addTo(map).bindPopup('Less crowded: W 14th to W 15th St');
 L.circleMarker([40.72238,-74.00495],{radius:9,color:'#fff',fillColor:'#ff7a00',fillOpacity:1}).addTo(map).bindTooltip('START · Canal St & 6th Ave',{permanent:true,direction:'left'});
